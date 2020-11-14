@@ -20,7 +20,6 @@ POST https://uber-spot.herokuapp.com/spot
         -16.4446755,
         -54.6981687
       ],
-      "__v": 0
     }
     
 ### Listar um spot mais próximo
@@ -44,7 +43,6 @@ obs: a unidade de mediada do parâmetro distance é KM, e tem valor default 1
           -16.4317953,
           -54.6277827
         ],
-        "__v": 0
       },
       {
         "_id": "5fb04f8ca0de9c15003386f9",
@@ -52,7 +50,6 @@ obs: a unidade de mediada do parâmetro distance é KM, e tem valor default 1
           -16.4337956,
           -54.6618452
         ],
-        "__v": 0
       }
     ]
 
