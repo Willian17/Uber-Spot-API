@@ -5,14 +5,14 @@
 
 POST https://uber-spot.herokuapp.com/spot
 
-#### request.body: 
+#### exemplo de request.body: 
 
     {
       "latitude": -16.4446755,
       "longitude": -54.6981687
     }
     
-#### response da request: 
+#### exemplo de response: 
 
     {
       "_id": "5fb0587cbe86941d03bb4c7f",
@@ -27,7 +27,7 @@ POST https://uber-spot.herokuapp.com/spot
 
 GET https://uber-spot.herokuapp.com/spot
 
-#### parametros (query): 
+#### exemplo de parametros (query): 
 
      longitude = -54.6265194: (obrigatório)
      latitude = -16.4325369 (obrigatório)
@@ -35,7 +35,7 @@ GET https://uber-spot.herokuapp.com/spot
      
 obs: a unidade de mediada do parâmetro distance é KM, e tem valor default 1
     
-#### response da request: 
+#### exemplo de response: 
 
     [
       {
