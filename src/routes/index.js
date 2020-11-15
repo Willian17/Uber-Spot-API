@@ -9,28 +9,19 @@ router.post('/spot', async (req, res)=> {
         res.json(point)
     } catch (error) {
         console.error(err)
-        res.status(500).send(err)     
+        res.status(400).send('Ocorreu um erro, tente novamente mais tarde')
     }
     
 })
 router.get('/spot', async (req, res)=> {
-    const filters =  {
-        'maxDistance': (req.query.distance || 1)/111.12,
-        'coordinates': [
-            req.query.latitude,
-            req.query.longitude
-        ]
-    }
     
     try {
-        const points = await Point.find({coordinates: {
-            $near: filters.coordinates,
-            $maxDistance: filters.maxDistance
-        }})
-        res.json(points)
+        const points = await Point.find()
+        const pointsWithCoordinates = points.map(point => point.coordinates)
+        res.json(pointsWithCoordinates)
     } catch (err) {
         console.error(err)
-        res.status(500).send(err)     
+        res.status(400).send('Ocorreu um erro, tente novamente mais tarde')     
     }
     
 })
