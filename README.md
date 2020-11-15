@@ -1,5 +1,11 @@
 # Uber-Spot-API
 
+## Sobre o Projeto
+Pensamos então em criar uma funcionalidade para o aplicativo da Uber que chamamos de “Uber Sport”, seria um ponto virtual que tem como objetivo servir de referência dentro destas regiões de dificil mobilidade urbana. Com o Uber Spot as pessoas destas regiões podem criar este pontos que irão servir de referência para os motoristas, e também para um ponto de encontro para compartilhar a corrida, economizando no trajeto. 
+
+Com o UBER SPOT temos vantagens para todos, usuários usando mais a plataforma para seus deslocamentos e motoristas se sentindo mais seguros para aceitar corridas que antes evitavam, com o Uber SPOT existe também maior chance de sugerir corridas compartihadas. Assim fomentamos a utilização do UBER nestas regiões, melhorando a mobilidade delas através da inclusão e empoderamento dos usuários!
+
+<hr/>
 
 ### Criar um spot (ponto virtual)
 
@@ -19,6 +25,8 @@ POST https://uber-spot.herokuapp.com/spot
       "longitude": -54.6981687
     }
     
+<hr/>
+
 ### Listar os spots
 
 GET https://uber-spot.herokuapp.com/spot
@@ -40,6 +48,7 @@ GET https://uber-spot.herokuapp.com/spot
       },
     ]
     
+<hr/>   
  
 ## Tecnologias usadas na API:
  - Node.js: execução de JavaScript construído no motor V8 JavaScript do Chrome.
