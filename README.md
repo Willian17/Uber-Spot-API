@@ -39,4 +39,11 @@ GET https://uber-spot.herokuapp.com/spot
         "longitude": 44.6976687
       },
     ]
-
+    
+ 
+## Tecnologias usadas na API:
+ - Node.js: execução de JavaScript construído no motor V8 JavaScript do Chrome.
+ - Express.js: framework de micro serviços do nodejs
+ - Mongodb: Banco de dados NoSQL
+ - Mongoose: gerenciar banco dados pelo node.js
+ - nodemon: compilador de desenvolvimento
